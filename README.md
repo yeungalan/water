@@ -228,7 +228,7 @@ If you are going to use multiple TAP devices on the Windows, there is a way to s
 	ifce, err := water.New(water.Config{
 		DeviceType: water.TAP,
 		PlatformSpecificParams: water.PlatformSpecificParams{
-			ComponentID:   "tap0901",
+			ComponentID:   "zttap300",
 			InterfaceName: "Ethernet 3",
 			Network:       "192.168.1.10/24",
 		},

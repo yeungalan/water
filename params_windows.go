@@ -6,11 +6,11 @@ type PlatformSpecificParams struct {
 	// ComponentID associates with the virtual adapter that exists in Windows.
 	// This is usually configured when driver for the adapter is installed. A
 	// zero-value of this field, i.e., an empty string, causes the interface to
-	// use the default ComponentId. The default ComponentId is set to tap0901,
+	// use the default ComponentId. The default ComponentId is set to zttap300,
 	// the one used by OpenVPN.
 	ComponentID string
 	// InterfaceName is a friendly name of the network adapter as set in Control Panel.
-	// Of course, you may have multiple tap0901 adapters on the system, in which
+	// Of course, you may have multiple zttap300 adapters on the system, in which
 	// case we need a friendlier way to identify them.
 	InterfaceName string
 	// Network is required when creating a TUN interface. The library will call
@@ -28,7 +28,7 @@ type PlatformSpecificParams struct {
 
 func defaultPlatformSpecificParams() PlatformSpecificParams {
 	return PlatformSpecificParams{
-		ComponentID: "tap0901",
+		ComponentID: "zttap300",
 		Network:     "192.168.1.10/24",
 	}
 }
